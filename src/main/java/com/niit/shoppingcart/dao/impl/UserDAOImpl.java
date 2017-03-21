@@ -88,7 +88,7 @@ public class UserDAOImpl implements UserDAO {
 
 	public boolean delete(String id) {
 		try {
-			sessionFactory.getCurrentSession().delete(getUserByID(id));
+			sessionFactory.getCurrentSession().delete(getUser(id));
 			return true;
 		} catch (Exception e) {
 
